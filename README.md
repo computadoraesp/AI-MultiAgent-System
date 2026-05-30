@@ -162,7 +162,7 @@ The `multiagent-system` model will appear in the chat dropdown.
 ## Documentation
 
 - [Detailed installation guide](INSTALL.md)
-- [Model configuration](models/model_config_manager.py)
+- [Model configuration](INSTALL.md#step-4-configure-models-for-your-hardware)
 
 ## License
 
