@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/unittest/__main__.py", line 18, in <module>
+    main(module=None)
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/unittest/main.py", line 104, in __init__
+    self.parseArgs(argv)
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/unittest/main.py", line 153, in parseArgs
+    self.createTests()
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/unittest/main.py", line 164, in createTests
+    self.test = self.testLoader.loadTestsFromNames(self.testNames,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/unittest/loader.py", line 207, in loadTestsFromNames
+    suites = [self.loadTestsFromName(name, module) for name in names]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/unittest/loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_system.py", line 2, in <module>
+    from planner.planner import decompose_prompt, decompose_prompt_structured
+  File "/app/planner/planner.py", line 6, in <module>
+    from runtime.ollama_manager import OllamaManager
+  File "/app/runtime/ollama_manager.py", line 92
+    if not None, json.load(f):
+               ^
+SyntaxError: invalid syntax
